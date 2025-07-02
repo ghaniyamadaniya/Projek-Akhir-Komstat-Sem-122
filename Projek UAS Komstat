@@ -15,3 +15,9 @@ ui <- fluidPage(
     warning = "#FFC107",
     danger = "#DC3545"
   ),
+
+
+output$download_report <- downloadHandler(
+  filename = function() {
+    paste("Laporan_Analisis_", Sys.Date(), ".docx", sep = "")
+  },
