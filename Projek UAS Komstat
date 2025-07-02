@@ -3,3 +3,15 @@ library(shiny)
 library(readr)
 library(readxl)
 library(dplyr)
+
+#UI
+ui <- fluidPage(
+  useShinyFeedback(),
+  theme = bs_theme(
+    bootswatch = "superhero",
+    primary = "#2E8B57",
+    success = "#28A745",
+    info = "#17A2B8",
+    warning = "#FFC107",
+    danger = "#DC3545"
+  ),
